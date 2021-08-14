@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
+
+    <meta name="description" content="html-format">
+
+    <title>Html format</title>
+	<script src="jquery-3.6.0.min.js"></script>
+
+    <style type="text/css">
+        * {
+            background-color: #cdcdcd;
+            overflow-x: hidden;
+            font-family: 'Permanent Marker', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .lala {
+            display: flex;
+        }
+
+        .header,
+        .footer {
+            height: 50px;
+            border: 2px solid aliceblue;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background-color: #b30000;
+        }
+
+        .lala .nav {
+
+            border: 2px solid aliceblue;
+            padding: 20px;
+            width: 20%;
+            height: 70vh;
+            margin-left: 10%;
+            margin-right: 10px;
+            background-color: #80ff00;
+
+        }
+
+
+        .lala .section {
+            border: 2px solid aliceblue;
+            width: 80%;
+            padding: 20px;
+            height: 70vh;
+            margin-right: 10%;
+            background-color: #333333;
+
+        }
+
+        h2 {
+            margin-top: 10px;
+            background-color: #b30000;
+
+        }
+
+        h1 {
+
+            margin: 20px 30px 20px 30px;
+            border: 2px solid #ffffff;
+
+
+        }
+
+        /* -----------------------------------menu style work starts here ----------------------------------------------------------------------------------------*/
+        .navbar ul li a {
+            list-style-type: none;
+            text-decoration: none;
+            color: red;
+            margin: 20px;
+
+
+
+        }
+
+        .navbar ul li {
+            margin: 40px;
+            border: 2px solid red;
+
+        }
+
+        p {
+
+            font-family: 'Itim', cursive;
+
+            margin-top: 20px;
+            padding: 20px 30px 20px 30px;
+            border: 2px solid red;
+
+        }
+
+        h1 {
+            background-color: #ff4000;
+        }
+
+        h3 {
+            border: 2px solid red;
+            align-text: center;
+            padding: 10px 20px 10px 20px;
+            margin-top: 10px;
+            background-color: #ff0040;
+			}
+#up{
+height: 90vh;
+background-color :red;
+}
+.newyo{
+
+background-color: yellow;
+height: 200vh;
+
+
+}
+    </style>
+</head>
+
+<body>
+    <!------------------body starts here----------------->
+    <h1>Project 1 : Simple Layout</h1>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+    <div class="lala">
+        <div class="nav">
+            <h3>Nav</h3>
+
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">FeedBack</a></li>
+                    <li><a href="#">About</a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="section">
+            <h3>Section</h3>
+            <p>
+                It is a long established fact that a reader will<br> be distracted by the readable content<br> of a page when looking at its layout.
+                The point of using Lorem Ipsum<br> is that it has a more-or-less normal distribution of<br> letters, as opposed to using 'Content here, content here',
+                making it look like readable<br> English. Many desktop publishing packages and web page <br>editors now use Lorem Ipsum as their default<br> model text, and
+                a search for 'lorem ipsum' will uncover many web sites<br>
+                still in their infancy. Various<br> versions have evolved over the years,
+                sometimes by accident, <br>sometimes on purpose (injected humour and the like).<br>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has<br> roots in a piece of classical Latin
+                literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,<br>
+            </p>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+<button>click here</button>
+<div id="up">this is div</div>
+<input type="text" name=""></input>
+<span id="focusid">hii</span>
+<span id="blurid">Welcome !!</span>
+
+<p id="yo">enedjbvuj bfjvbjbjfbvdjkn ikfnidvncinfjndvcj njfnvjcb jfbdjcbjdbjvc bjfbvj bfjbvj bfjb jbfjdsbcjbfsjdbcxjbcdsjbc j</p>
+    <script>
+	
+	$(document).ready(function(){
+	
+	//add class------
+	$('button').click(function(){
+	
+	$('#yo').addClass('newyo');
+	});
+	
+	//remove class--------
+	$('button').dblclick(function(){
+	
+	$('#yo').removeClass('newyo');
+	});
+	
+	
+	
+	
+	/*
+	$('button').click(function(){
+	
+	$('#yo').empty(); // we can also add remove in this area !!
+	
+	});
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* append ----
+	$('button').click(function(){
+	$('body').prepend('<p>this is new p tag.</p>');
+	});
+	*/
+	
+	
+
+	/*
+	// prepend 
+	
+	$('button').click(function(){
+	$('ul').prepend('<p>this is new p tag.</p>')
+	});
+	
+	
+	
+	
+	*/
+	
+	
+	
+	
+	/*
+	// for multiple events maybe a easy method ------
+	
+	$('p').on({
+	
+	
+	mouseenter: function(){
+	$(this).css('backgroundColor','blue');
+
+	
+	},
+	
+	mouseleave: function(){
+	$(this).css('backgroundColor','green');
+	},
+	click: function(){
+	alert('this is alert box');
+	}
+	});
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	// focus and blur event----
+	$('span').hide();
+	$('input').focus(function(){
+	$('#focusid').show().fadeOut(3000);
+	});
+	
+	$('input').blur(function(){
+	$('#blurid').show().fadeOut(5000);
+	});
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	// this is keyboard event ---
+	$('input').keydown(function(){
+	
+	alert('this is keyboard event');k
+	
+	
+	});
+	*/
+	/* //mouse event $('button').click(function(){
+	$('#up').toggle(1000);
+	
+	});*/
+	
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+        /*var num1 = 2;
+        var num2 = 7;
+        sum = num1 + num2;
+        document.write(sum + " " + "is sum of num1 and num2"); <
+        br / >
+            var firstName = "lala"
+        var seondName = "hai"
+        document.write("HI MY NAME IS" + firstName + secondName); */
+		
+		
+		
+		
+
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+
+<!--------------------------------------------------------------------*, *:before, *:after{
+-moz-box-sizing : border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}responsive code
+site   : foody
+wp pass: - Foody@Hoody1821031
+
+Keep this login information for your records:
+Client ID: 3638304
+Login email: damnknowledge2000@gmail.com
+----------------------------------------------------------------->
